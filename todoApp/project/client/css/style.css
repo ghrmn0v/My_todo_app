@@ -1,0 +1,234 @@
+/* ===== General ===== */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #f8f9fa;
+    color: #212529;
+    line-height: 1.6;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* ===== Navbar ===== */
+.navbar{
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.navbar-brand{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+
+/* ===== Hero ===== */
+.hero{
+    color: #3e4347;
+    background-color: rgb(232, 235, 238);
+}
+
+.hero h1{
+    font-size: 3rem;
+    color: rgb(38, 38, 38);
+    font-weight: 700;
+}
+
+.hero img{
+    height: 400px;
+}
+
+
+/* ===== About ===== */
+.about{
+    color: #3e4347;
+}
+
+.about-content p{
+    color: #6c757d;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.about h2{
+    color: #212529;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.about img{
+    max-width: 80%;
+    height: 300px;
+}
+
+
+/* ===== Features ===== */
+
+#features{
+    padding: 80px 0;
+}
+
+#features h2{
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+#features .card{
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.08);
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+#features .card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,.15);
+}
+
+#features .card-body{
+    padding: 30px 20px;
+}
+
+#features .card-title{
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+#features .card-text{
+    color: #6c757d;
+    line-height: 1.7;
+}
+
+
+/* ===== CTA ===== */
+
+.cta-section{
+    padding: 100px 0;
+    background: #198754;
+    color: white;
+    text-align: center;
+}
+
+.cta-section h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.cta-section p{
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.cta-section .btn{
+    padding: 12px 32px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    background: white;
+    color: #198754;
+    border: none;
+    transition: .3s;
+}
+
+.cta-section .btn:hover{
+    background: #f8f9fa;
+    transform: scale(1.05);
+}
+
+
+/* ===== Footer ===== */
+
+footer{
+    background: #212529;
+    color: white;
+}
+
+footer p{
+    margin: 0;
+    font-size: .95rem;
+}
+
+footer svg{
+    margin-right: 6px;
+}
+
+
+/* ===== Responsive ===== */
+
+@media (max-width: 992px){
+
+    .hero{
+        text-align: center;
+    }
+
+    .hero img{
+        margin-top: 40px;
+    }
+
+    .about-content{
+        text-align: center;
+    }
+
+    .about-content img{
+        margin-top: 30px;
+        max-width: 70%;
+    }
+
+}
+
+@media (max-width: 768px){
+
+    .hero{
+        padding: 60px 0;
+    }
+
+    .hero h1{
+        font-size: 2.3rem;
+    }
+
+    .hero .btn{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .about-content h2,
+    #features h2,
+    .cta-section h2{
+        font-size: 2rem;
+    }
+
+    .cta-section{
+        padding: 70px 20px;
+    }
+
+}
+
+@media (max-width: 576px){
+
+    .navbar-brand{
+        font-size: 1.5rem;
+    }
+
+    .hero h1{
+        font-size: 2rem;
+    }
+
+    .hero p,
+    .about-content p,
+    .cta-section p{
+        font-size: 1rem;
+    }
+
+    #features .card{
+        margin-bottom: 20px;
+    }
+
+}
