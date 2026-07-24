@@ -26,6 +26,10 @@ a{
     font-weight: 700;
 }
 
+.navbar-container{
+    padding-left: 70px;
+    padding-right: 70px;
+}
 
 /* ===== Hero ===== */
 .hero{
@@ -162,6 +166,12 @@ footer svg{
 
 
 /* ===== Responsive ===== */
+@media (max-width:768px){
+    .navbar-container{
+        padding-left:20px;
+        padding-right:20px;
+    }
+}
 
 @media (max-width: 992px){
 

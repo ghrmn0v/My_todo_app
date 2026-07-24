@@ -1,0 +1,94 @@
+/* ===== Layout ===== */
+
+html,
+body{
+    height:100%;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+
+    margin:0;
+    padding:0;
+
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f8f9fa;
+    color:#212529;
+}
+
+main{
+    flex:1;
+}
+
+/* ===== Navbar ===== */
+
+.navbar{
+    box-shadow:0 2px 8px rgba(0,0,0,.1);
+}
+
+.navbar-brand{
+    font-size:2rem;
+    font-weight:700;
+}
+
+/* ===== Todo ===== */
+
+.todo-section{
+    padding:60px 0;
+}
+
+.card{
+    border:none;
+    border-radius:18px;
+}
+
+.form-control{
+    height:50px;
+}
+
+.table td,
+.table th{
+    vertical-align:middle;
+}
+
+.badge{
+    padding:8px 14px;
+    font-size:.9rem;
+}
+
+/* ===== Buttons ===== */
+
+.btn-success,
+.btn-danger{
+    margin-left:5px;
+}
+
+/* ===== Footer ===== */
+
+footer{
+    margin-top:auto;
+}
+
+/* ===== Responsive ===== */
+
+@media (max-width:768px){
+
+    .navbar-brand{
+        font-size:1.5rem;
+    }
+
+    .text-end{
+        text-align:left !important;
+    }
+
+    .btn{
+        margin-top:5px;
+    }
+
+    .table{
+        font-size:.9rem;
+    }
+
+}
